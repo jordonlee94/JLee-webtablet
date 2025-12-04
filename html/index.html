@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Web Tablet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" class="hidden">
+    <div class="tablet">
+        
+<div class="topbar">
+    <div class="top-left">
+        <img src="img/logo.png" class="dw-logo">
+        <div class="title">DARK WEB MARKET</div>
+    </div>
+    <button id="close">X</button>
+</div>
+
+<div class="tabs">
+            <button data-tab="items" class="active">ITEMS</button>
+            <button data-tab="cars">CARS</button>
+            <button data-tab="drugs">DRUGS</button>
+            <button data-tab="guns">GUNS</button>
+        </div>
+
+        <div class="content">
+            <!-- ITEMS TAB -->
+            <div id="tab-items" class="tab">
+                <div class="form">
+                    <h4>List Item</h4>
+                    <select id="item-select" class="dw-select"></select>
+                    <input id="item-amount" type="number" placeholder="Amount">
+                    <input id="item-price" type="number" placeholder="Price">
+                    <small>Drugs & Guns must be listed in their own tabs.</small>
+                    <button id="list-item">List</button>
+                </div>
+                <div class="listings">
+                    <h4>Item Listings</h4>
+                    <div id="items"></div>
+                </div>
+            </div>
+
+            <!-- CARS TAB -->
+            <div id="tab-cars" class="tab hidden">
+                <div class="form">
+                    <h4>List Car</h4>
+                    <select id="car-select" class="dw-select"></select>
+                    <input id="car-price" type="number" placeholder="Price">
+                    <button id="list-car">List</button>
+                </div>
+                <div class="listings">
+                    <h4>Car Listings</h4>
+                    <div id="cars"></div>
+                </div>
+            </div>
+
+            <!-- DRUGS TAB -->
+            <div id="tab-drugs" class="tab hidden">
+                <div class="form">
+                    <h4>List Drug</h4>
+                    <select id="drug-select" class="dw-select"></select>
+                    <input id="drug-amount" type="number" placeholder="Amount">
+                    <input id="drug-price" type="number" placeholder="Price">
+                    <button id="list-drug">List</button>
+                </div>
+                <div class="listings">
+                    <h4>Drug Listings</h4>
+                    <div id="drugs"></div>
+                </div>
+            </div>
+
+            <!-- GUNS TAB -->
+            <div id="tab-guns" class="tab hidden">
+                <div class="form">
+                    <h4>List Gun</h4>
+                    <select id="gun-select" class="dw-select"></select>
+                    <!-- Amount removed for weapons -->
+                    <input id="gun-price" type="number" placeholder="Price">
+                    <button id="list-gun">List</button>
+                </div>
+                <div class="listings">
+                    <h4>Gun Listings</h4>
+                    <div id="guns"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toast" class="toast hidden"><div class="watermark">JLeeGaming Scripts</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
